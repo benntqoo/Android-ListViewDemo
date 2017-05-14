@@ -10,7 +10,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
-    String[] listViewType = {"ListAdapter"};
+    String[] listViewType = {"ListView", "ExpendListView"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
                 switch (position) {
                     case 0:
                         startActivity(new Intent(MainActivity.this, ListAdapterListView.class));
+                        break;
+                    case 1:
+                        startActivity(new Intent(MainActivity.this, ExpendListView.class));
                         break;
                 }
             }

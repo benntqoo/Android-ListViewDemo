@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".ListAdapterListView">
         </activity>
+        <activity android:name=".ExpendListView">
+        </activity>
     </application>
 
 </manifest>
