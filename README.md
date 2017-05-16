@@ -6,5 +6,4 @@
 [ExpandListView](https://programnoteforlearning.blogspot.com/2017/05/expandlistview.html#more)<br/>
 [ListView Header Footer](https://programnoteforlearning.blogspot.com/2017/05/listview.html#more)<br/>
 
-<br/>
 我的部落格:[ProgramNote](https://programnoteforlearning.blogspot.com/)
