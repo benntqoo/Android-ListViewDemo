@@ -18,10 +18,12 @@ public class ListAdapterListView extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_adapter_list_view);
-        ListView listView = (ListView) findViewById(R.id.listAdapterListView);
+        setTitle("ListView");
 
-//        String[] list =getResources().getStringArray(R.array.list); //取得String.xml 中的 array
+        ListView listView = (ListView) findViewById(R.id.lv_ListAdapterListView);
 
+        //取得String.xml 中的 array
+//        String[] list =getResources().getStringArray(R.array.list);
 
         ListAdapter listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
                 languageList);
@@ -32,11 +34,13 @@ public class ListAdapterListView extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String language;
                 TextView textView = (TextView) view.findViewById(android.R.id.text1);
-                language =textView.getText().toString();
+                language = textView.getText().toString();
                 Toast.makeText(ListAdapterListView.this, "position=" + position + " Language:" + language, Toast
                         .LENGTH_SHORT)
                         .show();
             }
         });
+
+
     }
 }

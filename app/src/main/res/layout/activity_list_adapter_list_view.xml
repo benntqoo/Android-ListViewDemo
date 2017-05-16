@@ -7,7 +7,7 @@
     tools:context="com.demo.listviewdemo.ListAdapterListView">
 
     <ListView
-        android:id="@+id/listAdapterListView"
+        android:id="@+id/lv_ListAdapterListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

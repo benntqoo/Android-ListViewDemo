@@ -22,6 +22,7 @@ public class ExpendListView extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_expend_list_view);
+        setTitle("ExpendableListView");
 
         groupList = new ArrayList<>();
         childList = new ArrayList<>();
@@ -39,7 +40,7 @@ public class ExpendListView extends AppCompatActivity {
                 new String[]{"childName"},
                 new int[]{android.R.id.text2});
 
-        ExpandableListView expandableListView = (ExpandableListView) findViewById(R.id.expandableListView);
+        ExpandableListView expandableListView = (ExpandableListView) findViewById(R.id.lv_ExpandableListView);
         expandableListView.setAdapter(simpleExpandableListAdapter);
 
         expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
@@ -47,8 +48,9 @@ public class ExpendListView extends AppCompatActivity {
             public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long
                     id) {
                 TextView childItem = (TextView) v.findViewById(android.R.id.text2);
-                String childStr =childItem.getText().toString();
-                Toast.makeText(ExpendListView.this,"child position="+childPosition+" child="+childStr , Toast.LENGTH_SHORT)
+                String childStr = childItem.getText().toString();
+                Toast.makeText(ExpendListView.this, "child position=" + childPosition + " child=" + childStr, Toast
+                        .LENGTH_SHORT)
                         .show();
                 return false;
             }
@@ -60,11 +62,11 @@ public class ExpendListView extends AppCompatActivity {
         GroupItem.put("groupName", title);
         groupList.add(GroupItem);
 
-        List<Map<String, String> > childItem = new ArrayList<>();
+        List<Map<String, String>> childItem = new ArrayList<>();
 
         for (int index = 0; index < child.length; index++) {
-            Map<String,String> childMapItem = new HashMap<String,String>();
-            childMapItem.put("childName",child[index]);
+            Map<String, String> childMapItem = new HashMap<String, String>();
+            childMapItem.put("childName", child[index]);
             childItem.add(childMapItem);
         }
 

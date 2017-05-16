@@ -10,12 +10,13 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
-    String[] listViewType = {"ListView", "ExpendListView"};
-
+    String[] listViewType = {"ListView", "ExpendableListView", "ListView Header Footer"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("ListViewDemo");
+
         ListAdapter mListAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listViewType);
         ListView mListView = (ListView) findViewById(R.id.mainListView);
         mListView.setAdapter(mListAdapter);
@@ -29,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 1:
                         startActivity(new Intent(MainActivity.this, ExpendListView.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(MainActivity.this, HeaderFooterListView.class));
                         break;
                 }
             }
