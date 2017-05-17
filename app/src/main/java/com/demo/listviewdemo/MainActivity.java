@@ -10,7 +10,8 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
-    String[] listViewType = {"ListView", "ExpendableListView", "ListView Header Footer"};
+    String[] listViewType = {"ListView", "ExpendableListView", "ListView Header Footer", "BaseAdapter ListView"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 2:
                         startActivity(new Intent(MainActivity.this, HeaderFooterListView.class));
+                        break;
+                    case 3:
+                        startActivity(new Intent(MainActivity.this, BaseAdapterListView.class));
                         break;
                 }
             }

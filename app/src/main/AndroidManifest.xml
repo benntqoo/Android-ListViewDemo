@@ -22,6 +22,8 @@
         </activity>
         <activity android:name=".HeaderFooterListView">
         </activity>
+        <activity android:name=".BaseAdapterListView">
+        </activity>
     </application>
 
 </manifest>

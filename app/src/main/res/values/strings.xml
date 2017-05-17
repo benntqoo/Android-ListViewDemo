@@ -1,20 +1,20 @@
 <resources>
-<string name="app_name">ListViewDemo</string>
-<string-array name="list">
-    <item>Android</item>
-    <item>Java</item>
-    <item>Swift</item>
-    <item>C</item>
-    <item>C++</item>
-    <item>C#</item>
-    <item>Python</item>
-    <item>Delphi</item>
-    <item>go</item>
-    <item>JavaScript</item>
-    <item>R</item>
-    <item>PHP</item>
-    <item>Ruby</item>
-    <item>Matlab</item>
-    <item>perl</item>
-</string-array>
+    <string name="app_name">ListViewDemo</string>
+    <string-array name="list">
+        <item>Android</item>
+        <item>Java</item>
+        <item>Swift</item>
+        <item>C</item>
+        <item>C++</item>
+        <item>C#</item>
+        <item>Python</item>
+        <item>Delphi</item>
+        <item>go</item>
+        <item>JavaScript</item>
+        <item>R</item>
+        <item>PHP</item>
+        <item>Ruby</item>
+        <item>Matlab</item>
+        <item>perl</item>
+    </string-array>
 </resources>
